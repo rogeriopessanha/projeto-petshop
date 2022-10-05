@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 *{
-    font-family: 'Courgette', cursive, sans-serif;
+    /* font-family: 'Courgette', cursive, sans-serif; */
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -14,11 +14,14 @@
 }
 
 :root{
+    /* cores */
     --titulo: black;
-    --subtitulo:grey;
+    --subtitulo:rgb(50, 49, 49);
     --principal: #e67e22;
     --secundaria: rgb(173, 55, 0);
     --fundo:#eee;
+
+    /* borda e sombra */
     --borda: .1rem solid rgb(150, 150, 150); 
     --box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
 }
@@ -42,4 +45,493 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
     background: var(--subtitulo);
     border-radius: 5rem;
+}
+
+section {
+    padding: 5rem 9%;
+}
+
+.titulo{
+    padding-bottom: 2rem;
+    text-align: center;
+    font-size: 3.5rem;
+    color: black;
+}
+
+.titulo span{
+    color: var(--principal);
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 2.8rem;
+    border-radius: 5rem;
+    border-top-left-radius: 0;
+    border: var(--borda);
+    cursor: pointer;
+    background: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.7rem;
+    overflow: hidden;
+    z-index: 0;
+    position: relative;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0rem;
+    height: 100%;
+    width: 100%;
+    background: rgb(5, 9, 69);
+    z-index: -1;
+    transition: .2s linear;
+    clip-path: circle(0% at 0% 5%);
+}
+
+.btn:hover::before{
+    clip-path: circle(100%);
+}
+
+.btn:hover{
+    color: #fff;
+}
+
+
+/* COMEÇO LOGIN-FORM */
+.login-form .btn{
+    width: 100%;
+    text-align: center;
+}
+
+ .login-form .btn:hover{
+    background: rgb(5, 9, 69);
+    margin: 1.5rem 0;
+}
+
+.login-form .links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.login-form .links a{
+    font-size: 1.4rem;
+    color: var(--principal);
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+.login-form{
+    position: absolute;
+    top: 120%; 
+    right: 2rem;
+    width: 35rem;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    display: none;
+}
+
+.login-form.active{
+    display: block;
+    animation: fadeIn .4s linear;
+}
+    
+.login-form h3{
+    color: black;
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.login-form .box{
+    width: 100%;
+    border-bottom: var(--borda);
+    border-width: .1rem;
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+}
+
+.login-form .box .lembre{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+
+label{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--subtitulo);
+}
+
+#menu-btn{
+    display: none;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+}
+
+/* FINAL LOGIN-FORM */
+
+
+/* COMEÇO DO HEADER */
+.header{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transform: translateY(-10rem);
+}
+
+.header.active{
+    transform: translateY(0rem);
+}
+
+ .header .icons a,
+ .header .icons div{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    color: var(--titulo);
+    cursor: pointer;
+}
+
+.header .icons a:hover,
+.header .icons div:hover{
+    color: var(--principal);
+}
+
+.logo {
+    font-size: 2rem;
+    color: var(--titulo);
+    font-weight: bolder;
+}
+
+.logo i{
+    font-size: 2.2rem;
+    color: var(--principal);
+}
+
+.navbar a{
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: var(--subtitulo);
+}
+
+.navbar a:hover{
+    color: var(--principal);
+
+}
+
+/* .login-form{
+    position: absolute;
+    top: 120%; 
+    right: 2rem;
+    width: 35rem;
+    border-radius: 1rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+    display: none;
+}
+
+.login-form.active{
+    display: block;
+    animation: fadeIn .4s linear;
+}
+    
+.login-form h3{
+    color: black;
+    font-size: 2.5rem;
+    padding-bottom: .5rem;
+}
+
+.login-form .box{
+    width: 100%;
+    border-bottom: var(--borda);
+    border-width: .1rem;
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+    color: black;
+    text-transform: none;
+}
+
+.login-form .box .lembre{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: 1rem 0;
+}
+
+label{
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--subtitulo);
+}
+
+#menu-btn{
+    display: none;
+}
+
+@keyframes fadeIn{
+    0%{
+        transform: translateY(3rem);
+        opacity: 0;
+    }
+} */
+/* FINAL DO HEADER */
+
+
+/* INICIO */
+.inicio{
+    min-height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/images.jfif) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.inicio .conteudo{
+    width: 50rem;
+    /* text-align: center; */
+}
+
+.inicio .conteudo h3{
+    font-size: 6rem;
+    color: rgb(35, 34, 34);
+    padding-bottom: 1rem;
+}
+
+.inicio .conteudo span{
+    color: var(--principal);
+}
+
+
+
+/* SOBRE */
+/* .sobre{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.sobre .image{
+    flex: 1 1 40rem;
+}
+
+.sobre .image img{
+    width: 100%;
+}
+
+.sobre .conteudo{
+    flex: 1 1 40rem;
+}
+
+.sobre .conteudo h3{
+    font-size: 4rem;
+}
+
+.sobre .conteudo p{
+    font-size: 1.6rem;
+    color: grey;
+    padding: 1rem 0;
+    line-height: 2;
+} */
+/* SOBRE */
+
+
+
+
+/* SHOP */
+
+.shop .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.shop .box-container .box{
+    position: relative;
+    overflow: hidden;
+    border: var(--borda);
+}
+
+.shop .box-container .box .image{
+    height: 40rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.shop .box-container .box .image img{
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+.shop .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+
+.shop .box-container .box:hover .icons{
+    transform:translateX(0rem)
+}
+
+
+
+.shop .box-container .box .icons{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    z-index: 10;
+    transform:translateX(10rem) ;
+}
+
+.shop .box-container .box .icons a{
+    display: block;
+    /* width: 4rem;
+    height: 4rem; */
+    line-height: 4rem;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    background: #fff;
+    color: black;
+    text-align: center;
+}
+
+.shop .box-container .box .icons a:hover{
+    color: #e67e22;
+}
+
+.shop .box-container .box .conteudo{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.shop .box-container .box .conteudo h3{
+    font-size: 2.2rem;
+    color: #000;
+}
+
+.shop .box-container .box .conteudo .amount{
+    font-size: 2rem;
+    color: #e67e22;
+}
+/* SHOP */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+/* telas grandes */
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+
+    section {
+        padding: 5rem 2rem;
+    }
+
+    .inicio{
+        justify-content: center;
+        background-position: right;
+    }
+
+    .inicio .conteudo{
+        text-align: center;
+        padding-bottom: 5rem;
+    }
+
+    .inicio .conteudo h3{
+        font-size: 4.5rem;
+    }
+}
+
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top: 99%; 
+        left: 0;
+        right: 0;  
+        background: #fff;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navbar a{
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+}
+
+
+/* Telas pequenas */
+@media (max-width: 450px) {
+    html{
+        font-size: 50%;
+    }
+
+    .header .login-form{
+        width: 90%;
+    }
+
+    
+   
 }
