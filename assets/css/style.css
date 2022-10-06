@@ -242,76 +242,17 @@ label{
 
 .navbar a:hover{
     color: var(--principal);
-
 }
 
-/* .login-form{
-    position: absolute;
-    top: 120%; 
-    right: 2rem;
-    width: 35rem;
-    border-radius: 1rem;
-    background: #fff;
-    box-shadow: var(--box-shadow);
-    padding: 2rem;
-    display: none;
-}
-
-.login-form.active{
-    display: block;
-    animation: fadeIn .4s linear;
-}
-    
-.login-form h3{
-    color: black;
-    font-size: 2.5rem;
-    padding-bottom: .5rem;
-}
-
-.login-form .box{
-    width: 100%;
-    border-bottom: var(--borda);
-    border-width: .1rem;
-    padding: 1.5rem 0;
-    margin: 1rem 0;
-    font-size: 1.6rem;
-    color: black;
-    text-transform: none;
-}
-
-.login-form .box .lembre{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    padding: 1rem 0;
-}
-
-label{
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: var(--subtitulo);
-}
-
-#menu-btn{
-    display: none;
-}
-
-@keyframes fadeIn{
-    0%{
-        transform: translateY(3rem);
-        opacity: 0;
-    }
-} */
-/* FINAL DO HEADER */
 
 
 /* INICIO */
 .inicio{
-    min-height: 55vh;
+    min-height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/images.jfif) no-repeat;
+    background: url(../img/fundo/fundoo3.webp) no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -324,7 +265,7 @@ label{
 
 .inicio .conteudo h3{
     font-size: 6rem;
-    color: rgb(35, 34, 34);
+    color: #fff;
     padding-bottom: 1rem;
 }
 
