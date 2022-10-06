@@ -342,7 +342,8 @@ label{
 }
 
 .produto .box-container .box .image img{
-    height: 90%;
+    padding: 4rem;
+    height: 100%;
     width: 100%;
     /* object-fit: cover; */
 }
@@ -538,48 +539,27 @@ label{
 
 /* CONTATO */
 .contato{
-    padding: 2rem 0;
+    /* padding: 2rem 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3rem;
-    background: url(../img/background.png);
+    gap: 3rem; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    background: url(../img/fundo/background.png);
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-/* .contato form {
-    max-width: 45rem;
-    margin-left: auto;
-    text-align: center;
-    padding: 4rem 0;
-} */
-
-/* .contato form h3 {
-    font-size: 2.2rem;
-    color: var(--titulo);
-    padding-bottom: 3rem;
-    font-weight: 600;
-} */
-
-/* .contato form .box {
-    width: 100%;
-    margin: .1rem 0;
-    padding: 1rem 1.2rem;
-    font-size: 1.6rem;
-    color: var(--titulo);
-    border-radius: .5rem;
-    text-transform: none;
-} */
-
-.contato .image{
+/* .contato .image{
     flex: 1 1 40rem;
 }
 
 .contato .image img{
     width: 30%;
-}
+} */
 
 .contato form{
     flex: 1 1 40rem;
@@ -610,8 +590,6 @@ label{
 }
 
 
-
-
 #botao-enviar{
     width: 50%;
     text-align: center;
@@ -622,6 +600,31 @@ label{
     background: #fff;
     color: #000;
 }
+
+
+.contato .fale h3 {
+    font-size: 3rem;
+    padding-top: 2rem;
+    color: #fff;
+}
+
+.contato .fale a {
+    display: block;
+    font-size: 2.4rem;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.contato .fale a i {
+    color: var(--fundo);
+    padding-right: .5rem;
+}
+
+.contato .fale a:hover i {
+    padding-right: 2rem;
+}
+
+
 /* CONTATO */
 
 
