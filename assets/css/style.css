@@ -369,41 +369,52 @@ label{
 
 
 
-/* SHOP */
+/* PRODUTO */
 
-.shop .box-container{
+.produto .titulo{
+    padding-bottom: 5rem;
+    text-align: center;
+    font-size: 3.5rem;
+    color: black;
+}
+
+.produto .titulo span{
+    color: var(--principal);
+}
+
+.produto .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     gap: 2.5rem;
 }
 
-.shop .box-container .box{
+.produto .box-container .box{
     position: relative;
     overflow: hidden;
     border: var(--borda);
 }
 
-.shop .box-container .box .image{
+.produto .box-container .box .image{
     height: 30rem;
     width: 100%;
     overflow: hidden;
 }
 
-.shop .box-container .box .image img{
+.produto .box-container .box .image img{
     height: 90%;
     width: 100%;
     /* object-fit: cover; */
 }
 
-.shop .box-container .box:hover .image img{
+.produto .box-container .box:hover .image img{
     transform: scale(1.1);
 }
 
-.shop .box-container .box:hover .icons{
+.produto .box-container .box:hover .icons{
     transform:translateX(0rem)
 }
 
-.shop .box-container .box .icons{
+.produto .box-container .box .icons{
     position: absolute;
     top: 1rem;
     right: 2rem;
@@ -411,7 +422,7 @@ label{
     transform:translateX(10rem) ;
 }
 
-.shop .box-container .box .icons a{
+.produto .box-container .box .icons a{
     display: block;
     /* width: 4rem;
     height: 4rem; */
@@ -423,38 +434,49 @@ label{
     text-align: center;
 }
 
-.shop .box-container .box .icons a:hover{
+.produto .box-container .box .icons a:hover{
     color: #e67e22;
 }
 
-.shop .box-container .box .conteudo{
+.produto .box-container .box .conteudo{
     padding: 1rem 0;
     text-align: center;
 }
 
-.shop .box-container .box .conteudo h3{
+.produto .box-container .box .conteudo h3{
     font-size: 2.2rem;
     color: #000;
 }
 
-.shop .box-container .box .conteudo .amount{
+.produto .box-container .box .conteudo .amount{
     font-size: 2rem;
     color: #e67e22;
 }
-/* SHOP */
+/* PRODUTO */
 
 
 
 /* SERVIÇO */
+
+.servico .titulo{
+    padding-bottom: 8rem;
+    text-align: center;
+    font-size: 3.5rem;
+    color: black;
+}
+
+.servico.titulo span{
+    color: var(--principal);
+}
 .servico .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2.5rem;
 }
 
 .servico .box-container .box{
     background: rgb(249, 201, 134);
-    padding: 3rem;
+    padding: 4rem;
     text-align: center;
     border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
 }
@@ -484,6 +506,76 @@ label{
     padding: 1rem 0;
 }
 /* SERVIÇO */
+
+
+
+/* PLANOS */
+.planos .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.planos .box-container .box{
+    position: relative;
+    padding: 2rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    background: rgb(227, 222, 222);
+}
+
+.planos .box-container .box .btn{
+    position: absolute;
+    bottom: -2rem;
+    right: 2rem;
+    background: #fff;
+}
+
+.planos .box-container .box .titulo{
+    text-align: center;
+    color: #ec6e00;
+    font-size: 2rem;
+}
+
+.planos .box-container .box .dia{
+    text-align: center;
+    color: black;
+    font-size: 3.5rem;
+}
+
+.planos .box-container .box .icon{
+    color: #ec6e00;
+    font-size: 5rem;
+    padding: 2rem 0;
+}
+
+.planos .box-container .box .list{
+    margin: 1rem 0;
+}
+
+.planos .box-container .box p{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: black;
+}
+
+.planos .box-container .box span{
+    color: #ec6e00;
+}
+
+.planos .box-container .box .amount{
+    font-size: 4rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.planos .box-container .box .amount span{
+    font-size: 3rem;
+}
+/* PLANOS */
 
 
 
