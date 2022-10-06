@@ -510,10 +510,21 @@ label{
 
 
 /* PLANOS */
+.planos .titulo{
+    padding-bottom: 4rem;
+    text-align: center;
+    font-size: 3.5rem;
+    color: black;
+}
+
+.planos.titulo span{
+    color: var(--principal);
+}
+
 .planos .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2.5rem;
 }
 
 .planos .box-container .box{
@@ -534,7 +545,7 @@ label{
 .planos .box-container .box .titulo{
     text-align: center;
     color: #ec6e00;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .planos .box-container .box .dia{
@@ -557,7 +568,7 @@ label{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 1rem 0;
     color: black;
 }
@@ -570,12 +581,115 @@ label{
     font-size: 4rem;
     font-weight: bolder;
     color: black;
+    margin-top: 2rem;
+    /* text-align: center; */
 }
 
 .planos .box-container .box .amount span{
     font-size: 3rem;
 }
 /* PLANOS */
+
+
+
+
+
+/* CONTATO */
+.contato{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background: url(../img/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.contato form {
+    max-width: 45rem;
+    margin-left: auto;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.contato form h3 {
+    font-size: 2.2rem;
+    color: var(--titulo);
+    padding-bottom: 3rem;
+    font-weight: 600;
+}
+
+.contato form .box {
+    width: 100%;
+    margin: .1rem 0;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: var(--titulo);
+    border-radius: .5rem;
+    text-transform: none;
+}
+
+.contato .image{
+    flex: 1 1 40rem;
+}
+
+.contato .image img{
+    width: 30%;
+}
+
+.contato form{
+    flex: 1 1 40rem;
+    padding: 2rem 7%;
+}
+
+
+.contato .falec form{
+    width: 50%;
+    background-color: red;
+    align-items: flex-end;
+    justify-content: flex-end;
+    
+}
+
+.contato form h3{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: #fff;
+}
+
+.contato form .box, textarea{
+    width: 100%;
+    border-bottom: var(--borda);
+    border-width: .1rem;
+    font-size: 1.6rem;
+    text-transform: none;
+    color: black;
+    padding: 1.5rem 0;
+    margin: 1rem 0;
+}
+
+.contato form textarea{
+    height: 15rem;
+    resize: none;
+}
+
+
+
+
+#botao-enviar{
+    width: 20%;
+    text-align: center;
+    color: #fff;
+}
+
+ #botao-enviar:hover{
+    background: #fff;
+    color: #000;
+    margin: 1.5rem 0;
+}
+/* CONTATO */
 
 
 
