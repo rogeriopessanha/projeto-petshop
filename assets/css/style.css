@@ -495,7 +495,8 @@ label{
     line-height: 5.5rem;
     font-size: 3rem;
     color: #fff;
-    background: #592d06;
+    /* background: #592d06; */
+    background: #F9C986;
     border-radius: 50%;
     margin-bottom: .5rem;
 }
@@ -700,27 +701,27 @@ label{
     width: 100%;
 }
 
-.footer .share{
+.footer .redes-social{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.footer .share a{
+.footer .redes-social a{
     color: #fff;
     border-color: #fff;
 }
 
-.footer .share a:hover{
+.footer .redes-social a:hover{
     color: black;
 }
 
-.footer .share a::before{
+.footer .redes-social a::before{
     background: #fff;
 }
 
-.footer .share a i{
+.footer .redes-social a i{
     padding-right: .5rem;
 }
 
