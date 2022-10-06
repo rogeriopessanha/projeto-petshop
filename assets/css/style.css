@@ -373,8 +373,8 @@ label{
 
 .shop .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 2.5rem;
 }
 
 .shop .box-container .box{
@@ -384,13 +384,13 @@ label{
 }
 
 .shop .box-container .box .image{
-    height: 40rem;
+    height: 30rem;
     width: 100%;
     overflow: hidden;
 }
 
 .shop .box-container .box .image img{
-    height: 100%;
+    height: 90%;
     width: 100%;
     /* object-fit: cover; */
 }
@@ -402,8 +402,6 @@ label{
 .shop .box-container .box:hover .icons{
     transform:translateX(0rem)
 }
-
-
 
 .shop .box-container .box .icons{
     position: absolute;
@@ -444,6 +442,48 @@ label{
     color: #e67e22;
 }
 /* SHOP */
+
+
+
+/* SERVIÇO */
+.servico .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.servico .box-container .box{
+    background: rgb(249, 201, 134);
+    padding: 3rem;
+    text-align: center;
+    border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%;
+}
+
+.servico .box-container .box:nth-child(even){
+    border-radius: 79% 21% 81% 19% / 58% 93% 7% 42%;
+}
+
+.servico .box-container .box:hover{
+    border-radius: 84% 16% 84% 16% / 12% 86% 14% 88%  ;
+}
+
+.servico .box-container .box i{
+    height: 5.5rem;
+    width: 5.5rem;
+    line-height: 5.5rem;
+    font-size: 3rem;
+    color: #fff;
+    background: #592d06;
+    border-radius: 50%;
+    margin-bottom: .5rem;
+}
+
+.servico .box-container .box h3{
+    font-size: 2.2rem;
+    color: black;
+    padding: 1rem 0;
+}
+/* SERVIÇO */
 
 
 
