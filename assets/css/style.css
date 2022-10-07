@@ -60,7 +60,7 @@ section {
 }
 
 .titulo span{
-    color: var(--principal);
+    color: #834e04;
 }
 
 .btn{
@@ -121,7 +121,7 @@ section {
 
 .login-form .links a{
     font-size: 1.4rem;
-    color: var(--principal);
+    color: #834e04;
     text-decoration: none;
 }
 
@@ -221,7 +221,7 @@ label{
 
 .header .icons a:hover,
 .header .icons div:hover{
-    color: var(--principal);
+    color: #834e04;
 }
 
 .logo {
@@ -232,7 +232,7 @@ label{
 
 .logo i{
     font-size: 2.2rem;
-    color: var(--principal);
+    color: #834e04;
 }
 
 .navbar a{
@@ -242,7 +242,7 @@ label{
 }
 
 .navbar a:hover{
-    color: var(--principal);
+    color: #834e04;
 }
 
 
@@ -367,7 +367,7 @@ label{
     color: black;
 }
 
-.servico.titulo span{
+.servico .titulo span{
     color: #834e04;
 }
 
