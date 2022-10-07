@@ -304,7 +304,7 @@ label{
 
 .produto .box-container .box .image img{
     padding: 4rem;
-    height: 25rem;
+    height: 35rem;
     width: 100%;
 }
 
@@ -723,7 +723,7 @@ label{
         width: 100%;
         overflow: hidden;
        
-    }
+    } */
     
     .produto .box-container .box .image img{
         padding: 2rem;
@@ -731,7 +731,7 @@ label{
         width: 100%;
     }
 
-    .produto .box-container .box{
+    /* .produto .box-container .box{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -754,7 +754,7 @@ label{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-    }
+    } */
 
    
 
@@ -762,18 +762,13 @@ label{
         
         overflow: hidden;
        
-    } */
+    }
     
-    /* .produto .box-container .box .image img{
+    .produto .box-container .box .image img{
         padding: 3rem;
         height: 40rem;
         width: 100%;
-    } */
-
-    /* .produto .box-container .box .conteudo{
-
-        padding-left: 20rem;
-    } */
+    }
 
     /* .produto .box-container{
         display: grid;
