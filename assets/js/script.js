@@ -33,12 +33,12 @@ window.onload = () =>{
     }
 }
 
-// fadeOut();
+fadeOut();
 
-// function loader(){
-//     document.querySelector('.loader-container').classList.add('active');
-// }
+function loader(){
+    document.querySelector('.loader-container').classList.add('active');
+}
 
-// function fadeOut(){
-//     setTimeout(loader, 5000);
-// }
+function fadeOut(){
+    setTimeout(loader, 5000);
+}
