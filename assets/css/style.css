@@ -1,8 +1,9 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
 
 *{
-    /* font-family: 'Courgette', cursive, sans-serif; */
+    font-family: 'Caveat', cursive;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
