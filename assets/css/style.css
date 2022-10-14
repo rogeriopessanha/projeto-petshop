@@ -271,11 +271,10 @@ label{
     color: #fff;
     padding-bottom: 1rem;
 }
-
+/* INICIO */
 
 
 /* PRODUTO */
-
 .produto .titulo{
     padding-bottom: 5rem;
     text-align: center;
@@ -328,8 +327,6 @@ label{
 
 .produto .box-container .box .icons a{
     display: block;
-    /* width: 4rem;
-    height: 4rem; */
     line-height: 4rem;
     font-size: 2.5rem;
     margin-top: 1rem;
@@ -359,9 +356,7 @@ label{
 /* PRODUTO */
 
 
-
 /* SERVIÇO */
-
 .servico .titulo{
     padding-bottom: 8rem;
     text-align: center;
@@ -536,7 +531,6 @@ label{
     resize: none;
 }
 
-
 #botao-enviar{
     width: 50%;
     text-align: center;
@@ -570,11 +564,10 @@ label{
 .contato .fale a:hover i {
     padding-right: 2rem;
 }
-
-
 /* CONTATO */
 
 
+/* FOOTER */
 .footer{
     position: relative;
     background: url(../img/fundo/footer_fundo.jpg);
@@ -627,6 +620,7 @@ label{
 .footer .credit span{
     color: #ec6e00;
 }
+/* FOOTER */
 
 
 /* COMEÇO CARREGAMENTO DA PÁGINA  */
@@ -654,31 +648,11 @@ label{
 
 
 
-
-
-
-
-
-
-
-
-
 /* media queries */
 
 /* telas grandes */
 @media (max-width: 991px) {
-    /* html{
-        font-size: 55%;
-    }
-    .header{
-        padding: 2rem;
-    }
-
-    section {
-        padding: 5rem 2rem;
-    } */
-
-
+  
     html {
         font-size: 50%;
     }
@@ -732,25 +706,12 @@ label{
         margin: 2rem;
         font-size: 2rem;
     }
-
-    /* .produto .box-container .box .image{
-        height: 85%;
-        width: 100%;
-        overflow: hidden;
-       
-    } */
     
     .produto .box-container .box .image img{
         padding: 2rem;
         height: 35rem;
         width: 100%;
     }
-
-    /* .produto .box-container .box{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    } */
 
 }
 
@@ -765,14 +726,6 @@ label{
         width: 90%;
     }
 
-    /* .produto .box-container .box{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-    } */
-
-   
-
     .produto .box-container .box .image{
         
         overflow: hidden;
@@ -784,11 +737,5 @@ label{
         height: 40rem;
         width: 100%;
     }
-
-    /* .produto .box-container{
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-        gap: 1.5rem;
-    } */
    
 }
