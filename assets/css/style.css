@@ -757,7 +757,7 @@ label{
     .whats{
         position: fixed;
         bottom: 1rem;
-        right: 2rem;
+        right: .50rem;
         z-index: 1000;
     }
     .whats img{
