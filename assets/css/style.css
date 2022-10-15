@@ -648,6 +648,9 @@ label{
 
 
 
+
+
+
 /* media queries */
 
 /* telas grandes */
@@ -736,6 +739,16 @@ label{
         padding: 3rem;
         height: 40rem;
         width: 100%;
+    }
+
+    .whats{
+        position: fixed;
+        bottom: 1rem;
+        right: 2rem;
+        z-index: 1000;
+    }
+    .whats img{
+        width: 4rem;
     }
    
 }
