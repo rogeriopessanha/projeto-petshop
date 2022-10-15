@@ -647,7 +647,20 @@ label{
 /* FINAL CARREGAMENTO DA PÁGINA  */
 
 
+/* WHATSAPP */
+.whats{
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 1000;
+}
 
+.whats img{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+/* WHATSAPP */
 
 
 
